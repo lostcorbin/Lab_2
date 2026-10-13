@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Conference Registration Form</h1>
+
+    <form>
+        <table border="1" style="width:70%; border-collapse:collapse;">
+            <tr>
+                <th colspan="2">Conference Registration</th>
+            </tr>
+
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your email address" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" value="18" min="18" max="99" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country of Residence:</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Areas of Interest:</td>
+                <td>
+                    <input type="checkbox" id="software" name="interest" value="Software Development">
+                    <label for="software">Software Development</label><br>
+                    <input type="checkbox" id="data" name="interest" value="Data Science">
+                    <label for="data">Data Science</label><br>
+                    <input type="checkbox" id="cyber" name="interest" value="Cybersecurity">
+                    <label for="cyber">Cybersecurity</label><br>
+                    <input type="checkbox" id="ai" name="interest" value="Artificial Intelligence">
+                    <label for="ai">Artificial Intelligence</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Experience Level:</td>
+                <td>
+                    <input type="radio" id="beginner" name="experience" value="Beginner">
+                    <label for="beginner">Beginner</label>
+                    <input type="radio" id="intermediate" name="experience" value="Intermediate">
+                    <label for="intermediate">Intermediate</label>
+                    <input type="radio" id="advanced" name="experience" value="Advanced">
+                    <label for="advanced">Advanced</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="comments">Comments or Questions:</label></td>
+                <td>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Any comments or questions?"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
